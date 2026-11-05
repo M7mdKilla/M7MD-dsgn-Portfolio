@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14110e" />
+      <stop offset="60%" stop-color="#0a0907" />
+      <stop offset="100%" stop-color="#030302" />
+    </linearGradient>
+    <radialGradient id="amberGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#b45309" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)" />
+  <circle cx="400" cy="480" r="320" fill="url(#amberGlow)" />
+  
+  <!-- Subtle typography background -->
+  <text x="400" y="240" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="92" fill="#221c16" letter-spacing="4">NITRO COLD</text>
+  <text x="400" y="320" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="92" fill="#221c16" letter-spacing="4">BREW // 01</text>
+  
+  <!-- Sleek can / bottle silhouette -->
+  <rect x="290" y="360" width="220" height="420" rx="40" fill="#1b1713" stroke="#d97706" stroke-width="2" filter="drop-shadow(0 20px 40px rgba(0,0,0,0.8))" />
+  <line x1="330" y1="460" x2="470" y2="460" stroke="#d97706" stroke-width="2" />
+  <text x="400" y="520" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28" fill="#fef3c7" letter-spacing="6">ZENITH</text>
+  <text x="400" y="550" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14" fill="#d97706" letter-spacing="4">ETHIOPIA YIRGACHEFFE</text>
+  <text x="400" y="600" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="12" fill="#a1a1aa" letter-spacing="2">NITROGEN INFUSED · 24HR EXTRACTION</text>
+
+  <!-- Lime accent badge -->
+  <rect x="340" y="710" width="120" height="32" rx="16" fill="#ccff00" />
+  <text x="400" y="731" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#09090b" letter-spacing="1">LIMITED RUN</text>
+
+  <!-- Editorial Top & Bottom labels -->
+  <text x="60" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#d97706">CAMPAIGN VISUAL 01</text>
+  <text x="740" y="80" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="13" fill="#71717a">OCTOBER 2026</text>
+  <text x="60" y="940" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#71717a">DIRECTOR: M7MD.DSGN</text>
+  <text x="740" y="940" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#ccff00">SPECIALTY ROASTERY</text>
+</svg>

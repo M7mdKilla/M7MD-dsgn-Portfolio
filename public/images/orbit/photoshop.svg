@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <!-- 3D Shadow -->
+    <filter id="psDropShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.9" />
+      <feDropShadow dx="-4" dy="-2" stdDeviation="6" flood-color="#ccff00" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Top Surface Gradient -->
+    <linearGradient id="psFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002244" />
+      <stop offset="40%" stop-color="#001830" />
+      <stop offset="100%" stop-color="#000d1a" />
+    </linearGradient>
+
+    <!-- Side 3D Extrusion Gradient -->
+    <linearGradient id="psSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#050a12" />
+    </linearGradient>
+
+    <!-- Lime Rim Highlight -->
+    <linearGradient id="psLimeRim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="1" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1e3a5f" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Inner Core Radial Glow -->
+    <radialGradient id="psGlowCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#002244" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#psDropShadow)">
+    <!-- 3D Extruded Base (Bottom/Side Depth) -->
+    <path d="M 28 32 L 84 20 L 98 68 L 42 80 Z" fill="url(#psSide)" />
+    <!-- Rounded 3D Block Base -->
+    <rect x="22" y="22" width="76" height="76" rx="22" transform="rotate(-6 60 60)" fill="url(#psSide)" />
+    
+    <!-- Front Face (Slightly Angled) -->
+    <rect x="18" y="16" width="74" height="74" rx="20" transform="rotate(-6 55 53)" fill="url(#psFace)" stroke="url(#psLimeRim)" stroke-width="2.5" />
+
+    <!-- Ambient Core Glow -->
+    <circle cx="55" cy="53" r="30" fill="url(#psGlowCore)" />
+
+    <!-- Diagonal Glass Sheen -->
+    <path d="M 24 38 C 24 24 34 18 46 16 L 80 13 C 86 19 86 30 76 38 C 60 48 36 50 24 38 Z" fill="#ffffff" opacity="0.16" />
+
+    <!-- Photoshop 'Ps' Glyph with Cyan Glow -->
+    <g transform="translate(32, 30) rotate(-6 24 24)">
+      <!-- P -->
+      <path d="M 8 36 L 8 10 L 22 10 C 29 10 33 13.5 33 21 C 33 28.5 29 32 22 32 L 15 32 L 15 36 Z M 15 26 L 21 26 C 25 26 27 24 27 21 C 27 18 25 16 21 16 L 15 16 Z" 
+            fill="#38bdf8" filter="drop-shadow(0 0 6px rgba(56,189,248,0.8))" />
+      <!-- s -->
+      <path d="M 37 27.5 C 37 25 39.5 23.5 43.5 22.5 C 47.5 21.5 49.5 20 49.5 17.5 C 49.5 13.5 45.5 11 39.5 11 C 34.5 11 30.5 13 28.5 16 L 33.5 19.5 C 35 17.5 37 16.5 39.5 16.5 C 42 16.5 43.5 17.5 43.5 19 C 43.5 20.5 42 21.5 38.5 22.5 C 33.5 24 31.5 26 31.5 29.5 C 31.5 34 35.5 36.5 41.5 36.5 C 47 36.5 51.5 34 52.5 30 L 47.5 27 C 46.5 28.5 44.5 30 41.5 30 C 39 30 37 29 37 27.5 Z" 
+            fill="#38bdf8" filter="drop-shadow(0 0 6px rgba(56,189,248,0.8))" />
+    </g>
+
+    <!-- Top Corner Lime Light Highlight -->
+    <circle cx="28" cy="18" r="2.5" fill="#ccff00" filter="drop-shadow(0 0 4px #ccff00)" />
+  </g>
+</svg>

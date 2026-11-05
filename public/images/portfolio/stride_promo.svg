@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="strideBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0a0a" />
+      <stop offset="50%" stop-color="#0d0404" />
+      <stop offset="100%" stop-color="#050101" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#strideBg)" />
+
+  <!-- Speed Chevron Lines -->
+  <path d="M 200 100 L 400 337 L 200 575" fill="none" stroke="#ef4444" stroke-opacity="0.3" stroke-width="12" />
+  <path d="M 350 100 L 550 337 L 350 575" fill="none" stroke="#ef4444" stroke-opacity="0.5" stroke-width="16" />
+  <path d="M 500 100 L 700 337 L 500 575" fill="none" stroke="#ccff00" stroke-opacity="0.8" stroke-width="20" />
+
+  <text x="600" y="240" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="64" fill="#ffffff" letter-spacing="4">STRIDE HYROX 2026</text>
+  <text x="600" y="290" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="18" fill="#ef4444" letter-spacing="8">WORLD TOUR LAUNCH FILM</text>
+
+  <!-- Play button HUD -->
+  <circle cx="600" cy="420" r="46" fill="#ccff00" />
+  <polygon points="592,403 617,420 592,437" fill="#09090b" />
+</svg>

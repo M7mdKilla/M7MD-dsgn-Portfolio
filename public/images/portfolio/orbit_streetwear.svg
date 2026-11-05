@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="orbitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150f24" />
+      <stop offset="50%" stop-color="#0c0915" />
+      <stop offset="100%" stop-color="#050308" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#orbitBg)" />
+  
+  <!-- Cyberpunk Streetwear Lines & Typography -->
+  <text x="50" y="120" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="70" fill="#a855f7" letter-spacing="2">ORBIT</text>
+  <text x="50" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="44" fill="#ffffff" letter-spacing="6">CYBER DROP</text>
+  <text x="50" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14" fill="#ccff00" letter-spacing="4">CAPSULE 04 / TOKYO EDITION</text>
+
+  <!-- Stylized Hooded Jacket Silhouette -->
+  <g transform="translate(100, 260)">
+    <path d="M 120 0 L 280 0 L 370 120 L 320 180 L 260 140 L 270 420 L 130 420 L 140 140 L 80 180 L 30 120 Z" fill="#1e182f" stroke="#a855f7" stroke-width="2" />
+    <!-- Center metallic zipper line -->
+    <line x1="200" y1="40" x2="200" y2="420" stroke="#ccff00" stroke-width="3" stroke-dasharray="8 4" />
+    <!-- Tech specs text on sleeve -->
+    <text x="140" y="260" font-family="monospace" font-size="10" fill="#71717a">WEATHER-PROOF 1000D</text>
+    <text x="140" y="280" font-family="monospace" font-size="10" fill="#ccff00">CORDURA® HYBRID FABRIC</text>
+  </g>
+
+  <!-- Footer metadata tags -->
+  <text x="50" y="750" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#e4e4e7">LOOKBOOK EDITORIAL</text>
+  <text x="550" y="750" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#ccff00">8 SLIDES CAROUSEL</text>
+</svg>

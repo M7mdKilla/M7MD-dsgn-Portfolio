@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-bg: #09090b;
+    --brand-surface: #121217;
+    --brand-card: #18181f;
+    --brand-border: #272732;
+    --brand-lime: #ccff00;
+    --brand-lime-glow: rgba(204, 255, 0, 0.25);
+    --brand-lime-muted: rgba(204, 255, 0, 0.12);
+
+    /* Global Typography CSS Variables (Managed centrally from /src/config/typography.ts) */
+    --font-ar-heading: 'Alexandria', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-ar-heading-hero-weight: 900;
+    --font-ar-heading-section-weight: 800;
+    --font-ar-heading-hero-lh: 1.42;
+    --font-ar-heading-section-lh: 1.3;
+
+    --font-ar-body: 'IBM Plex Sans Arabic', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-ar-body-weight: 400;
+    --font-ar-ui-weight: 500;
+    --font-ar-body-lh: 1.65;
+    --font-ar-paragraph-lh: 1.7;
+
+    --font-en-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-en-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-en-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --font-brand-logo: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Default / English (LTR) Typography */
+  html {
+    --font-sans: var(--font-en-body);
+    --font-mono: var(--font-en-mono);
+    font-family: var(--font-en-body);
+    background-color: #09090b;
+    color: #f4f4f5;
+  }
+
+  /* English Body & UI Elements */
+  html:not([dir="rtl"]) body,
+  html:not([dir="rtl"]) p,
+  html:not([dir="rtl"]) a,
+  html:not([dir="rtl"]) button,
+  html:not([dir="rtl"]) input,
+  html:not([dir="rtl"]) textarea,
+  html:not([dir="rtl"]) select,
+  html:not([dir="rtl"]) label,
+  html:not([dir="rtl"]) li,
+  html:not([dir="rtl"]) nav,
+  html:not([dir="rtl"]) .font-sans {
+    font-family: var(--font-en-body);
+  }
+
+  html:not([dir="rtl"]) .font-mono {
+    font-family: var(--font-en-mono);
+  }
+
+  /* English Headings Typography (Independent from English body font) */
+  html:not([dir="rtl"]) h1,
+  html:not([dir="rtl"]) h2,
+  html:not([dir="rtl"]) h3,
+  html:not([dir="rtl"]) h4,
+  html:not([dir="rtl"]) h5,
+  html:not([dir="rtl"]) h6,
+  html:not([dir="rtl"]) h1 span,
+  html:not([dir="rtl"]) h2 span,
+  html:not([dir="rtl"]) h3 span {
+    font-family: var(--font-en-heading);
+  }
+
+  /* Arabic (RTL) Root Typography */
+  html[dir="rtl"] {
+    --font-sans: var(--font-ar-body);
+    --font-mono: var(--font-ar-body);
+    font-family: var(--font-ar-body);
+    font-weight: var(--font-ar-body-weight);
+    line-height: var(--font-ar-body-lh);
+    letter-spacing: 0;
+  }
+
+  /* Arabic Body & UI Typography (Independent from Arabic heading font) */
+  html[dir="rtl"] body,
+  html[dir="rtl"] p,
+  html[dir="rtl"] a,
+  html[dir="rtl"] button,
+  html[dir="rtl"] input,
+  html[dir="rtl"] textarea,
+  html[dir="rtl"] select,
+  html[dir="rtl"] label,
+  html[dir="rtl"] li,
+  html[dir="rtl"] nav,
+  html[dir="rtl"] .font-sans,
+  html[dir="rtl"] .font-mono,
+  .font-ar-body {
+    font-family: var(--font-ar-body);
+    letter-spacing: 0 !important;
+  }
+
+  html[dir="rtl"] p,
+  html[dir="rtl"] li {
+    line-height: var(--font-ar-paragraph-lh);
+  }
+
+  html[dir="rtl"] button,
+  html[dir="rtl"] input,
+  html[dir="rtl"] select,
+  html[dir="rtl"] label {
+    font-weight: var(--font-ar-ui-weight);
+  }
+
+  /* Arabic Headings Typography (Independent from Arabic body font) */
+  html[dir="rtl"] h1,
+  html[dir="rtl"] h2,
+  html[dir="rtl"] h3,
+  html[dir="rtl"] h4,
+  html[dir="rtl"] h5,
+  html[dir="rtl"] h6,
+  html[dir="rtl"] h1 span,
+  html[dir="rtl"] h2 span,
+  html[dir="rtl"] h3 span {
+    font-family: var(--font-ar-heading) !important;
+    font-weight: var(--font-ar-heading-section-weight);
+    letter-spacing: 0 !important;
+    line-height: var(--font-ar-heading-section-lh);
+  }
+
+  html[dir="rtl"] h1,
+  html[dir="rtl"] h1 span {
+    font-weight: var(--font-ar-heading-hero-weight);
+    line-height: var(--font-ar-heading-hero-lh);
+  }
+
+  /* Preserve M7MD.dsgn brand logo typography across both languages */
+  .brand-logo-text {
+    font-family: var(--font-brand-logo) !important;
+    letter-spacing: 0.03em !important;
+  }
+
+  /* Custom subtle dark scrollbars for internal view containers */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #09090b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #272732;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3f3f4e;
+  }
+}
+
+/* Custom utility classes */
+.lime-glow {
+  box-shadow: 0 0 25px rgba(204, 255, 0, 0.18);
+}
+
+.lime-glow-sm {
+  box-shadow: 0 0 12px rgba(204, 255, 0, 0.15);
+}
+
+.text-gradient-lime {
+  background: linear-gradient(135deg, #ffffff 40%, #ccff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Semantic GSAP hook classes (animated exclusively via GSAP timelines) */
+.transition-stagger-1,
+.transition-stagger-2,
+.transition-stagger-3,
+.transition-stagger-4 {
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

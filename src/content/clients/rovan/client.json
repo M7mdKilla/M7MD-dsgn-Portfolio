@@ -1,0 +1,15 @@
+{
+  "name": {
+    "en": "ROVAN",
+    "ar": "ROVAN"
+  },
+  "industry": {
+    "en": "Food Industry",
+    "ar": "قطاع الأغذية"
+  },
+  "description": {
+    "en": "Editable client description placeholder — add official ROVAN brand overview here.",
+    "ar": "نص وصفي تجريبي قابل للتعديل — أضف النبذة الرسمية لعلامة ROVAN هنا."
+  },
+  "order": 1
+}

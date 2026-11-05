@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Outer Drop Shadow -->
+    <filter id="shadowGemini" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.85" />
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#9B72CF" flood-opacity="0.3" />
+    </filter>
+
+    <!-- 3D Dark Glass Bevel -->
+    <linearGradient id="glassBorderGemini" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B72CF" stop-opacity="0.75" />
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.5" />
+      <stop offset="65%" stop-color="#ccff00" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#1c1228" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Deep Glass Body Surface -->
+    <linearGradient id="glassBodyGemini" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181026" stop-opacity="0.96" />
+      <stop offset="60%" stop-color="#0e0818" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#050209" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Top Gloss Reflection -->
+    <linearGradient id="glossGemini" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Gemini Gradient -->
+    <linearGradient id="geminiStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="40%" stop-color="#818cf8" />
+      <stop offset="80%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <radialGradient id="geminiGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow Base -->
+  <rect x="10" y="10" width="80" height="80" rx="22" fill="#000" filter="url(#shadowGemini)" />
+
+  <!-- Outer Glass Rim -->
+  <rect x="10" y="10" width="80" height="80" rx="22" fill="url(#glassBorderGemini)" />
+
+  <!-- Inner Dark Tile Body -->
+  <rect x="12" y="12" width="76" height="76" rx="20" fill="url(#glassBodyGemini)" />
+
+  <!-- Radial Core Ambient -->
+  <circle cx="50" cy="50" r="32" fill="url(#geminiGlow)" />
+
+  <!-- Upper Glass Sheen -->
+  <path d="M 14 30 C 14 18 20 14 32 14 L 68 14 C 80 14 86 18 86 30 C 86 42 70 48 50 48 C 30 48 14 42 14 30 Z" fill="url(#glossGemini)" />
+
+  <!-- Lime Accent Reflection on Corner -->
+  <circle cx="22" cy="22" r="2" fill="#ccff00" opacity="0.9" filter="drop-shadow(0 0 3px #ccff00)" />
+
+  <!-- Google Gemini 4-Point Sparkle Star Glyph -->
+  <g id="gemini-glyph" transform="translate(50, 50)">
+    <path d="M 0 -22 C 0 -9.8 9.8 0 22 0 C 9.8 0 0 9.8 0 22 C 0 9.8 -9.8 0 -22 0 C -9.8 0 0 -9.8 0 -22 Z" fill="url(#geminiStar)" filter="drop-shadow(0 0 5px rgba(129, 140, 248, 0.6))" />
+    <circle cx="0" cy="0" r="4" fill="#ffffff" opacity="0.9" />
+  </g>
+</svg>

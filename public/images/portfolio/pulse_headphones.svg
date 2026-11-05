@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f" />
+      <stop offset="60%" stop-color="#050508" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <radialGradient id="limePulse" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#ccff00" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <circle cx="600" cy="337" r="300" fill="url(#limePulse)" />
+
+  <!-- Dynamic Soundwave grid -->
+  <g stroke="#27273a" stroke-width="1.5" opacity="0.6">
+    <line x1="100" y1="337" x2="1100" y2="337" />
+    <circle cx="600" cy="337" r="140" fill="none" stroke="#ccff00" stroke-width="2" stroke-dasharray="6 6" />
+    <circle cx="600" cy="337" r="210" fill="none" stroke="#27273a" />
+    <circle cx="600" cy="337" r="280" fill="none" stroke="#27273a" stroke-width="1" />
+  </g>
+
+  <!-- 3D Headphone Arc Simulation -->
+  <path d="M 460 360 C 460 220 740 220 740 360" fill="none" stroke="#38384a" stroke-width="24" stroke-linecap="round" />
+  <path d="M 460 360 C 460 220 740 220 740 360" fill="none" stroke="#ccff00" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+  
+  <!-- Ear cups with neon ring -->
+  <rect x="420" y="320" width="60" height="110" rx="30" fill="#1b1b24" stroke="#ccff00" stroke-width="3" />
+  <rect x="720" y="320" width="60" height="110" rx="30" fill="#1b1b24" stroke="#ccff00" stroke-width="3" />
+
+  <!-- Typography overlays -->
+  <text x="600" y="160" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="4">PULSE ONE SPATIAL 3D</text>
+  <text x="600" y="200" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14" fill="#ccff00" letter-spacing="6">MOTION TEASER · 4K 60FPS</text>
+  
+  <!-- Play Prompt HUD -->
+  <circle cx="600" cy="337" r="42" fill="#ccff00" />
+  <polygon points="593,322 615,337 593,352" fill="#09090b" />
+</svg>

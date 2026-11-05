@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 960" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nexusBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08141e" />
+      <stop offset="50%" stop-color="#040b11" />
+      <stop offset="100%" stop-color="#010406" />
+    </linearGradient>
+  </defs>
+  <rect width="540" height="960" fill="url(#nexusBg)" />
+
+  <!-- Neural Mesh Grid -->
+  <g stroke="#06b6d4" stroke-opacity="0.3" stroke-width="1">
+    <circle cx="270" cy="450" r="180" fill="none" stroke-dasharray="4 6" />
+    <circle cx="270" cy="450" r="120" fill="none" stroke="#ccff00" stroke-opacity="0.5" stroke-width="2" />
+    <line x1="270" y1="180" x2="270" y2="720" />
+    <line x1="90" y1="450" x2="450" y2="450" />
+    <polygon points="270,330 374,450 270,570 166,450" fill="none" stroke="#06b6d4" stroke-width="2" />
+  </g>
+
+  <!-- Dynamic Glowing Core -->
+  <circle cx="270" cy="450" r="40" fill="#06b6d4" opacity="0.8" />
+  <circle cx="270" cy="450" r="16" fill="#ccff00" />
+
+  <!-- Typography: AI Reel Kicker -->
+  <text x="270" y="160" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" fill="#ffffff" letter-spacing="3">SYNTHETIC</text>
+  <text x="270" y="200" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" fill="#06b6d4" letter-spacing="3">INTELLIGENCE</text>
+  <text x="270" y="235" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#ccff00" letter-spacing="4">NEXUS AI LABS · REEL ID</text>
+
+  <!-- Play button HUD -->
+  <circle cx="270" cy="740" r="32" fill="#ccff00" />
+  <polygon points="265,728 281,740 265,752" fill="#040b11" />
+  <text x="270" y="800" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#e4e4e7" letter-spacing="2">PLAY VERTICAL REEL</text>
+</svg>
